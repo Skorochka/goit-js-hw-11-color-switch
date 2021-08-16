@@ -31,7 +31,8 @@ function stopColorChange() {
 // функции для генерации цвета 
 
 function selectionColor() {
-    const randomColor = randomIntegerFromInterval(0, 5)
+    arrayLength = colors.length
+    const randomColor = randomIntegerFromInterval(0, arrayLength)
     bgc = colors[randomColor]
     refs.body.setAttribute('style', `background-color: ${bgc}`)
 }
